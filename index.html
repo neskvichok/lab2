@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автобіографія</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Автобіографія</h1>
+        <nav>
+            <ul>
+                <li><a href="#childhood">Дитинство</a></li>
+                <li><a href="#school">Школа</a></li>
+                <li><a href="#university">ВНЗ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="childhood">
+            <h2>Дитинство</h2>
+            <p>Я виросла в маленькому містечку. Мої батьки — <a href="parents1.html">Олександр</a> та <a href="parents2.html">Марія</a>. 
+            Я завжди мріяла про великі досягнення.</p>
+            <img src="childhood.jpg" alt="Фото дитинства" class="responsive">
+        </section>
+
+        <section id="school">
+            <h2>Школа</h2>
+            <p>Я навчалася в Ужгородському науковому ліцеї, де отримала багато знань.</p>
+            <table>
+                <tr>
+                    <th>Предмет</th>
+                    <th>Оцінка</th>
+                </tr>
+                <tr>
+                    <td>Математика</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>Фізика</td>
+                    <td>9</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="university">
+            <h2>ВНЗ</h2>
+            <p>Зараз я навчаюся в <span class="blinking">Ужгородському національному університеті</span>.</p>
+        </section>
+
+        <section id="form">
+            <h2>Контактна форма</h2>
+            <form>
+                <div>
+                    <label for="name">Ім'я:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Електронна пошта:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="message">Повідомлення:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <div>
+                    <label for="options">Виберіть опцію:</label>
+                    <select id="options" name="options">
+                        <option value="1">Опція 1</option>
+                        <option value="2">Опція 2</option>
+                        <option value="3">Опція 3</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                    <label for="subscribe">Підписатися на новини</label>
+                </div>
+                <button type="submit">Відправити</button>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
